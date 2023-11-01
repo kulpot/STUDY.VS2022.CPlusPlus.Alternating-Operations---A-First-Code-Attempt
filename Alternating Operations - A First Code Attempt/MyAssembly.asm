@@ -11,7 +11,7 @@ doit proc
 
 	; this is a comment i can type whatever i like after a semicolon and assembler will ignore it
 	
-	; --------------------- Alternating Operations - Engineering a Solution --------------------------------------
+	; -------------------- Alternating Operations - A First Code Attempt --------------------------------------
 
 	; 2^1 + 2^2 * 2^3 + 2^4 * 2^5 + ..... 2^n
 
@@ -23,6 +23,19 @@ doit proc
 ;		2^5				32				2048			800
 
 	ret
+
+	; --------------------- Alternating Operations - Engineering a Solution --------------------------------------
+
+	; 2^1 + 2^2 * 2^3 + 2^4 * 2^5 + ..... 2^n
+
+	;	 loop(ebx)		Power(eax)		total(ecx)		totalHex
+;		2^1				2				2				2
+;		2^2				4				6				6
+;		2^3				8				48				30
+;		2^4				16				64				40
+;		2^5				32				2048			800
+
+	;ret
 
 	; ----------------------- Alternating Operations - Our Next Challenge ------------------------------------------
 
